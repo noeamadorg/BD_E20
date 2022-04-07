@@ -44,25 +44,25 @@ CREATE TABLE boleto (
   fecha_validez DATE,
   id_cliente INTEGER,
   id_tipo_boleto INTEGER 
-)
+);
 
 CREATE TABLE ctipo_boleto (
   id_tipo_boleto SERIAL,
   etiqueta_tipo_boleto VARCHAR(15)
-)
+);
 
 CREATE TABLE ccolonia (
   id_colonia SERIAL,
   etiqueta_colonia VARCHAR(64),
   id_municipio INTEGER
-)
+);
 
 -----
 CREATE TABLE orden (
   id_orden SERIAL,
   id_articulo INTEGER,
   cantidad INTEGER
-)
+);
 
 CREATE TABLE articulo (
   id_articulo SERIAL,
@@ -70,15 +70,15 @@ CREATE TABLE articulo (
   precio DECIMAL,
   id_tipo_articulo INTEGER,
   id_boleto INTEGER
-)
+);
 
 CREATE TABLE cfabricante (
   id_fabricante SERIAL,
   etiqueta_fabricante VARCHAR(40)
-)
+);
 
-CREATE TABLE ctipo_atraccion(
+CREATE TABLE ctipo_atraccion (
   id_tipo SERIAL,
   etiqueta_tipo VARCHAR(30)
-)
+);
 -----
