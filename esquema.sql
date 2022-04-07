@@ -6,8 +6,7 @@ WITH
   TABLESPACE = pg_default 
   CONNECTION LIMIT = -1;
 
-CREATE TABLE direccion
-(
+CREATE TABLE direccion (
   id_direccion SERIAL,
   calle VARCHAR(64),
   num_exterior INTEGER,
@@ -15,14 +14,12 @@ CREATE TABLE direccion
   id_colonia INTEGER
 );
 
-CREATE TABLE cestado
-(
+CREATE TABLE cestado (
   id_estado SERIAL,
   etiqueta_estado VARCHAR(25)
 );
 
-CREATE TABLE orden_cliente
-(
+CREATE TABLE orden_cliente (
   id_orden_cliente SERIAL,
   fecha_orden DATE,
   hora_pago TIME,
@@ -31,9 +28,33 @@ CREATE TABLE orden_cliente
   id_orden INTEGER
 );
 
-CREATE TABLE ctipo_de_pago
-(
+CREATE TABLE ctipo_de_pago (
   id_tipo_de_pago SERIAL,
   etiqueta_tipo_de_pago VARCHAR(20)
 );
 
+-------------
+CREATE TABLE ctipo_articulo (
+  id_tipo_articulo SERIAL,
+  etiqueta_tipo_articulo VARCHAR(40)
+);
+
+CREATE TABLE boleto (
+  id_boleto SERIAL,
+  fecha_validez DATE,
+  id_cliente INTEGER,
+  id_tipo_boleto INTEGER 
+)
+
+CREATE TABLE ctipo_boleto (
+  id_tipo_boleto SERIAL,
+  etiqueta_tipo_boleto VARCHAR(15)
+)
+
+CREATE TABLE ccolonia (
+  id_colonia SERIAL,
+  etiqueta_colonia VARCHAR(64),
+  id_municipio INTEGER
+)
+
+-----
