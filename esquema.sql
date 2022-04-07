@@ -58,3 +58,27 @@ CREATE TABLE ccolonia (
 )
 
 -----
+CREATE TABLE orden (
+  id_orden SERIAL,
+  id_articulo INTEGER,
+  cantidad INTEGER
+)
+
+CREATE TABLE articulo (
+  id_articulo SERIAL,
+  nombre_articulo VARCHAR(50),
+  precio DECIMAL,
+  id_tipo_articulo INTEGER,
+  id_boleto INTEGER
+)
+
+CREATE TABLE cfabricante (
+  id_fabricante SERIAL,
+  etiqueta_fabricante VARCHAR(40)
+)
+
+CREATE TABLE ctipo_atraccion(
+  id_tipo SERIAL,
+  etiqueta_tipo VARCHAR(30)
+)
+-----
