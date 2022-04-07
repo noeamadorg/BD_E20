@@ -37,7 +37,3 @@ CREATE TABLE ctipo_de_pago
   etiqueta_tipo_de_pago VARCHAR(20)
 );
 
-
-
-
-
