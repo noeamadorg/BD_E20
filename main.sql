@@ -1,3 +1,4 @@
+-- This is a comment
 CREATE DATABASE parque_diversiones;
 WITH 
   OWNER = DEFAULT 
@@ -7,50 +8,36 @@ WITH
 
 CREATE TABLE direccion
 (
-  ID_direccion SERIAL,
-  Calle VARCHAR(64),
-  Num_exterior INTEGER,
-  Codigo_postal INTEGER,
-  ID_colonia INTEGER
+  id_direccion SERIAL,
+  calle VARCHAR(64),
+  num_exterior INTEGER,
+  codigo_postal INTEGER,
+  id_colonia INTEGER
 );
 
 CREATE TABLE cestado
 (
-  ID_estado SERIAL,
+  id_estado SERIAL,
   etiqueta_estado VARCHAR(25)
 );
 
 CREATE TABLE orden_cliente
 (
-  ID_orden_cliente SERIAL,
-  Fecha_orden DATE,
-  Hora_pago TIME,
-  ID_tipo_de_pago INTEGER,
-  ID_cliente INTEGER,
-  ID_orden INTEGER
+  id_orden_cliente SERIAL,
+  fecha_orden DATE,
+  hora_pago TIME,
+  id_tipo_de_pago INTEGER,
+  id_cliente INTEGER,
+  id_orden INTEGER
 );
 
 CREATE TABLE ctipo_de_pago
 (
-  ID_tipo_de_pago SERIAL,
+  id_tipo_de_pago SERIAL,
   etiqueta_tipo_de_pago VARCHAR(20)
 );
 
 
 
-SELECT "Hello world!";
-
-SELECT *
-FROM parque_diversiones;
 
 
-SELECT idPedido, ROUND(AVG(precioLinea),4)
-FROM LINEAPEDIDO
-GROUP BY idPedido
-HAVING AVG(precioLinea) < 10
-
--- This is a comment
---CODE SELECT * 
---FROM Customers 
---WHERE Region IN(‘CA’, ‘MT’, ‘WA’)
---ORDER BY Region, CompanyName DESC
