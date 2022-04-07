@@ -78,7 +78,7 @@ CREATE TABLE cfabricante (
 );
 
 CREATE TABLE ctipo_atraccion (
-  id_tipo SERIAL,
+  id_tipo_atraccion SERIAL,
   etiqueta_tipo VARCHAR(30)
 );
 -----
