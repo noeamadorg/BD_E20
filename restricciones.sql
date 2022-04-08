@@ -229,7 +229,7 @@ ALTER TABLE persona
   ALTER COLUMN id_sexo SET NOT NULL;
 
 ALTER TABLE persona
-  ALTER COLUMN id_direccion SET NOT NULL; ---
+  ALTER COLUMN id_direccion SET NOT NULL; 
 
 ALTER TABLE persona  
   ALTER COLUMN telefono SET NOT NULL; 
@@ -243,15 +243,8 @@ ALTER TABLE atraccion
 ALTER TABLE direccion 
   ADD CHECK (num_exterior > 0);
 
-ALTER TABLE direccion 
-  ADD CHECK (codigo_postal LIKE '[0-9][0-9][0-9][0-9][0-9]');
-
 ALTER TABLE orden 
   ADD CHECK (cantidad > 0); 
 
 ALTER TABLE csexo 
   ADD CHECK (etiqueta_sexo IN ('M','F'));
-
-ALTER TABLE persona
-  ADD CHECK (telefono LIKE '[1-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]');
-
