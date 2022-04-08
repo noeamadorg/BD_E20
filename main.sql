@@ -31,3 +31,9 @@ SELECT
   count(*) AS ascents
 FROM mountains
 GROUP BY century;
+
+WITH 
+  OWNER = DEFAULT 
+  ENCODING = 'UTF8' 
+  TABLESPACE = pg_default 
+  CONNECTION LIMIT = -1;
