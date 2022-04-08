@@ -59,8 +59,10 @@ ALTER TABLE atraccion
   ADD CONSTRAINT fk_atraccion_id_frabricante_cfabricante_id_fabricante FOREIGN KEY (id_fabricante) REFERENCES cfabricante(id_fabricante);
 
 ALTER TABLE atraccion
-  ADD CONSTRAINT fk_atraccion_id_estado_cestado_atraccion_id_estado FOREIGN KEY (id_estado) REFERENCES cestado_atraccion(id_fabricante);
+  ADD CONSTRAINT fk_atraccion_id_estado_cestado_atraccion_id_estado FOREIGN KEY (id_estado) REFERENCES cestado_atraccion(id_estado);
 
+ALTER TABLE atraccion
+  ADD CONSTRAINT fk_atraccion_id_tipo_atraccion_ctipo_atraccion_id_estado_atraccion FOREIGN KEY (id_tipo_atraccion) REFERENCES ctipo_atraccion(id_tipo_atraccion);
 
 ALTER TABLE cliente 
   ADD CONSTRAINT fk_cliente_id_persona_persona_id_persona FOREIGN KEY (id_persona) REFERENCES persona(id_persona);
@@ -108,9 +110,11 @@ ALTER TABLE orden
   ADD CONSTRAINT fk_orden_id_articulo_articulo_id_articulo FOREIGN KEY (id_articulo) REFERENCES articulo(id_articulo);
 
 -------------------------NOT NULL----------------------------
+ALTER TABLE articulo
+  ALTER COLUMN id_tipo_articulo SET NOT NULL;
 
-ALTER TABLE boleto
-  ALTER COLUMN fecha_validez SET NOT NULL;
+ALTER TABLE articulo
+  ALTER COLUMN precio SET NOT NULL;
 
 ALTER TABLE boleto 
   ALTER COLUMN id_cliente SET NOT NULL;
@@ -151,7 +155,18 @@ ALTER TABLE orden_cliente
 ALTER TABLE orden_cliente
   ALTER COLUMN hora_pago SET NOT NULL;
 
-a
+ALTER TABLE orden_cliente
+  ALTER COLUMN id_tipo_de_pago SET NOT NULL;
+
+ALTER TABLE orden_cliente
+  ALTER COLUMN id_cliente SET NOT NULL;
+
+ALTER TABLE orden_cliente
+  ALTER COLUMN id_orden SET NOT NULL;
+
+ALTER TABLE orden
+  ALTER COLUMN id_articulo SET NOT NULL;
+
 
 ---------------------------CHECKS----------------------------
 
