@@ -72,7 +72,7 @@ ALTER TABLE atraccion
   ADD CONSTRAINT fk_atraccion_id_estado_cestado_atraccion_id_estado_atraccion FOREIGN KEY (id_estado_atraccion) REFERENCES cestado_atraccion(id_estado_atraccion);
 
 ALTER TABLE atraccion
-  ADD CONSTRAINT fk_atraccion_id_tipo_atraccion_ctipo_atraccion_id_tipo_atraccion FOREIGN KEY (id_tipo_atraccion) REFERENCES ctipo_atraccion(id_tipo_atraccion);
+  ADD CONSTRAINT fk_atraccion_id_tipo_atraccion_ctipoatraccion_id_tipo_atraccion FOREIGN KEY (id_tipo_atraccion) REFERENCES ctipo_atraccion(id_tipo_atraccion);
 
 ALTER TABLE cliente 
   ADD CONSTRAINT fk_cliente_id_persona_persona_id_persona FOREIGN KEY (id_persona) REFERENCES persona(id_persona);
@@ -160,7 +160,7 @@ ALTER TABLE cfabricante
   ALTER COLUMN etiqueta_fabricante SET NOT NULL;
 
 ALTER TABLE csexo
-  ALTER COLUMN etiqueta_sexo SET NPT NULL;
+  ALTER COLUMN etiqueta_sexo SET NOT NULL;
 
 ALTER TABLE ctipo_articulo 
   ALTER COLUMN etiqueta_tipo_articulo SET NOT NULL;
@@ -229,7 +229,7 @@ ALTER TABLE persona
   ALTER COLUMN id_sexo SET NOT NULL;
 
 ALTER TABLE persona
-  ALTER COLUMN id_direccion SET NOT NULL; 
+  ALTER COLUMN id_direccion SET NOT NULL; ---ACA en persona nos falta fecha de nac? o ño por date
 
 ALTER TABLE persona  
   ALTER COLUMN telefono SET NOT NULL; 
@@ -252,9 +252,6 @@ ALTER TABLE orden
 ALTER TABLE csexo 
   ADD CHECK (etiqueta_sexo IN ('M','F'))
 
----ya no sé que mas acá compas D:
+ALTER TABLE persona
+  ADD CHECK (telefono LIKE '[1-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]');
 
-
-pues ya estufas, no? Sam está buscando a ver si podemos poner un check en el numero de telefono como el del codigo postal 
-AAAA VAVAVAVAVA pero ya lo demas creo que ya, verdad? Creo que si  
-parece que si es de 10 Ah perfecto! 
