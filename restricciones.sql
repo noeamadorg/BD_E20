@@ -229,7 +229,7 @@ ALTER TABLE persona
   ALTER COLUMN id_sexo SET NOT NULL;
 
 ALTER TABLE persona
-  ALTER COLUMN id_direccion SET NOT NULL; ---ACA en persona nos falta fecha de nac? o ño por date
+  ALTER COLUMN id_direccion SET NOT NULL; ---
 
 ALTER TABLE persona  
   ALTER COLUMN telefono SET NOT NULL; 
@@ -250,7 +250,7 @@ ALTER TABLE orden
   ADD CHECK (cantidad > 0); 
 
 ALTER TABLE csexo 
-  ADD CHECK (etiqueta_sexo IN ('M','F'))
+  ADD CHECK (etiqueta_sexo IN ('M','F'));
 
 ALTER TABLE persona
   ADD CHECK (telefono LIKE '[1-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]');
