@@ -27,7 +27,7 @@ ALTER TABLE cmunicipio
   ADD CONSTRAINT pk_cmunicipio_id_municipio PRIMARY KEY (id_municipio);
 
 ALTER TABLE crol
-  ADD CONSTRAINT pk_crol_id_rol PRIMARY KEY (id_crol);
+  ADD CONSTRAINT pk_crol_id_rol PRIMARY KEY (id_rol);
 
 ALTER TABLE csexo
   ADD CONSTRAINT pk_csexo_id_sexo PRIMARY KEY (id_sexo);
@@ -128,10 +128,10 @@ ALTER TABLE persona
 ALTER TABLE cmunicipio
   ADD CONSTRAINT fk_cmunicipio_id_estado_cestado_id_estado FOREIGN KEY (id_estado) REFERENCES cestado(id_estado);
 
--------------------------NOT NULL----------------------------
-ALTER TABLE articulo
-  ALTER COLUMN id_tipo_articulo SET NOT NULL;
+---COMPLETAS
 
+
+-------------------------NOT NULL----------------------------
 ALTER TABLE articulo
   ALTER COLUMN precio SET NOT NULL;
 
@@ -159,8 +159,8 @@ ALTER TABLE cestado_atraccion
 ALTER TABLE cfabricante
   ALTER COLUMN etiqueta_fabricante SET NOT NULL;
 
-ALTER TABLE cmunicipio
-  ALTER COLUMN id_municipio
+ALTER TABLE csexo
+  ALTER COLUMN etiqueta_sexo SET NPT NULL;
 
 ALTER TABLE ctipo_articulo 
   ALTER COLUMN etiqueta_tipo_articulo SET NOT NULL;
@@ -231,8 +231,8 @@ ALTER TABLE persona
 ALTER TABLE persona
   ALTER COLUMN id_direccion SET NOT NULL; 
 
-ALTER TABLE persona 
-  ALTER COLUMN telefono
+ALTER TABLE persona  
+  ALTER COLUMN telefono SET NOT NULL; 
 
 
 ---------------------------CHECKS----------------------------
@@ -247,9 +247,14 @@ ALTER TABLE direccion
   ADD CHECK (codigo_postal LIKE '[0-9][0-9][0-9][0-9][0-9]');
 
 ALTER TABLE orden 
-  ADD CHECK (cantidad > 0);
+  ADD CHECK (cantidad > 0); 
+
+ALTER TABLE csexo 
+  ADD CHECK (etiqueta_sexo IN ('M','F'))
 
 ---ya no sé que mas acá compas D:
--- pues ya lo dejamos asi jeje no esta mal :)
 
 
+pues ya estufas, no? Sam está buscando a ver si podemos poner un check en el numero de telefono como el del codigo postal 
+AAAA VAVAVAVAVA pero ya lo demas creo que ya, verdad? Creo que si  
+parece que si es de 10 Ah perfecto! 

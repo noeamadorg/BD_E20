@@ -11,9 +11,9 @@ CREATE TABLE articulo (
 
 CREATE TABLE atraccion (
   id_atraccion  SERIAL,
-  capacidad     INTEGER,
+  capacidad INTEGER,
   id_fabricante INTEGER,
-  id_estado     INTEGER,
+  id_estado_atraccion INTEGER,
   id_tipo_atraccion INTEGER
 );
 
