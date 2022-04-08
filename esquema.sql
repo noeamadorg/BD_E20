@@ -1,4 +1,4 @@
--- This is a comment
+-- AQUI VA EL ESQUEMA (CREACION DE LAS TABLAS)
 CREATE DATABASE parque_diversiones;
 WITH 
   OWNER = DEFAULT 
@@ -82,3 +82,66 @@ CREATE TABLE ctipo_atraccion (
   etiqueta_tipo VARCHAR(30)
 );
 -----
+CREATE TABLE cliente (
+  id_cliente SERIAL,
+  id_persona INTEGER
+);
+
+CREATE TABLE empleado (
+  id_empleado SERIAL,
+  sueldo      DECIMAL,
+  nss         INTEGER,
+  id_rol      INTEGER,
+  id_persona  INTEGER
+);
+
+CREATE TABLE empleado_atraccion (
+  id_empleado_atraccion SERIAL,
+  numero_veces_uso      INTEGER,
+  fecha_uso             DATE,
+  id_empleado           INTEGER,
+  id_atraccion          INTEGER
+);
+
+CREATE TABLE atraccion (
+  id_atraccion  SERIAL,
+  capacidad     INTEGER,
+  id_fabricante INTEGER,
+  id_estado     INTEGER,
+  id_tipo_atraccion INTEGER
+);
+
+CREATE TABLE cestado_atraccion (
+  id_estado_atraccion SERIAL,
+  etiqueta_estado_atraccion VARCHAR(15)
+);
+
+CREATE TABLE crol (
+  id_rol  SERIAL,
+  etiqueta_rol VARCHAR(30)
+);
+
+CREATE TABLE cmunicipio (
+  id_municipio SERIAL,
+  etiqueta_municipio VARCHAR(64),
+  id_estado INTEGER
+);
+
+CREATE TABLE csexo (
+  id_sexo SERIAL,
+  etiqueta_sexo VARCHAR(12),
+);
+
+CREATE  TABLE  persona (
+  id_persona SERIAL,
+  apellidopat VARCHAR(32),
+  apellidomat VARCHAR(32),
+  nombre VARCHAR(64),
+  fecha_nacimiento DATE,
+  telefono INTEGER,
+  id_sexo INTEGER,
+  id_direccion INTEGER,
+);
+
+
+
