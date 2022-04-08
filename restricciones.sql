@@ -50,6 +50,9 @@ ALTER TABLE orden
 ALTER TABLE orden_cliente
   ADD CONSTRAINT pk_orden_cliente_id_orden_cliente PRIMARY KEY (id_orden_cliente);
 
+ALTER TABLE persona
+  ADD CONSTRAINT pk_id_persona PRIMARY KEY (id_persona);
+
 
 
 
@@ -79,7 +82,7 @@ ALTER TABLE empleado_atraccion
 ALTER TABLE empleado 
   ADD CONSTRAINT fk_empleado_id_persona_persona_id_persona FOREIGN KEY (id_persona) REFERENCES persona(id_persona);
 
-  ALTER TABLE empleado 
+ALTER TABLE empleado 
   ADD CONSTRAINT fk_empleado_id_rol_crol_id_rol FOREIGN KEY (id_rol) REFERENCES crol(id_rol);
 
 ALTER TABLE orden_cliente
@@ -109,6 +112,9 @@ ALTER TABLE boleto
 ALTER TABLE orden
   ADD CONSTRAINT fk_orden_id_articulo_articulo_id_articulo FOREIGN KEY (id_articulo) REFERENCES articulo(id_articulo);
 
+ALTER TABLE persona
+  ADD CONSTRAINT fk_id_persona_id_sexo_sexo_id_sexo FOREIGN KEY (id_);
+
 -------------------------NOT NULL----------------------------
 ALTER TABLE articulo
   ALTER COLUMN id_tipo_articulo SET NOT NULL;
@@ -116,17 +122,29 @@ ALTER TABLE articulo
 ALTER TABLE articulo
   ALTER COLUMN precio SET NOT NULL;
 
+ALTER TABLE articulo
+  ALTER COLUMN nombre_articulo SET NOT NULL;
+
+ALTER TABLE atraccion
+  ALTER COLUMN capacidad SET NOT NULL;
+
 ALTER TABLE boleto 
   ALTER COLUMN id_cliente SET NOT NULL;
 
 ALTER TABLE boleto 
   ALTER COLUMN id_tipo_boleto SET NOT NULL;
 
+ALTER TABLE boleto 
+  ALTER COLUMN fecha_validez SET NOT NULL;
+
 ALTER TABLE ccolonia 
   ALTER COLUMN etiqueta_colonia SET NOT NULL;
 
 ALTER TABLE ccolonia 
   ALTER COLUMN id_municipio SET NOT NULL;
+
+ALTER TABLE cestado_atraccion
+  ALTER COLUMN etiqueta_estado_atraccion SET NOT NULL;
 
 ALTER TABLE cfabricante
   ALTER COLUMN etiqueta_fabricante SET NOT NULL;
@@ -149,6 +167,18 @@ ALTER TABLE direccion
 ALTER TABLE direccion
   ALTER COLUMN codigo_postal SET NOT NULL;
 
+ALTER TABLE empleado_atraccion
+  ALTER COLUMN numero_veces_uso SET NOT NULL;
+
+ALTER TABLE empleado_atraccion
+  ALTER COLUMN fecha_uso SET NOT NULL;
+
+ALTER TABLE empleado
+  ALTER COLUMN sueldo SET NOT NULL;
+
+ALTER TABLE empleado
+  ALTER COLUMN nss SET NOT NULL;
+
 ALTER TABLE orden_cliente
   ALTER COLUMN fecha_orden SET NOT NULL;
 
@@ -167,8 +197,41 @@ ALTER TABLE orden_cliente
 ALTER TABLE orden
   ALTER COLUMN id_articulo SET NOT NULL;
 
+ALTER TABLE orden
+  ALTER COLUMN cantidad SET NOT NULL;
+
+ALTER TABLE atraccion
+  ALTER COLUMN id_fabricante SET NOT NULL;
+
+ALTER TABLE atraccion
+  ALTER COLUMN id_estado_atraccion SET NOT NULL;
+
+ALTER TABLE atraccion
+  ALTER COLUMN id_tipo_atraccion SET NOT NULL;
+
+ALTER TABLE crol
+  ALTER COLUMN etiqueta_rol SET NOT NULL;
+
+ALTER TABLE persona
+  ALTER COLUMN apellidopat SET NOT NULL;
+
+ALTER TABLE persona
+  ALTER COLUMN nombre SET NOT NULL;
+
+ALTER TABLE persona
+  ALTER COLUMN fecha_nacimiento SET NOT NULL;
+
+ALTER TABLE persona
+  ALTER COLUMN id_sexo SET NOT NULL;
+
+ALTER TABLE persona
+  ALTER COLUMN id_direccion SET NOT NULL;
+
 
 ---------------------------CHECKS----------------------------
+
+ALTER TABLE atraccion
+  ADD CHECK (capacidad > 0);
 
 ALTER TABLE direccion 
   ADD CHECK (num_exterior > 0);
@@ -178,6 +241,7 @@ ALTER TABLE direccion
 
 ALTER TABLE orden 
   ADD CHECK (cantidad > 0);
+
 
 
 
