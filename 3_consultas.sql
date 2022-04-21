@@ -29,7 +29,7 @@ SELECT id_cliente
 -- crol
 SELECT id_rol
 FROM crol
-WHERE etiqueta_rol LIKE 'Montaña Rusa';
+WHERE etiqueta_rol LIKE 'Vigilancia';
 
 SELECT etiqueta_rol
 FROM crol
@@ -41,17 +41,17 @@ FROM csexo
 WHERE etiqueta_sexo LIKE 'Otro';
 
 SELECT etiqueta_rol
-FROM crol
-WHERE id_rol = 4;
+FROM csexo
+WHERE id_sexo = 2;
 
 -- ctipo_articulo
 SELECT id_tipo_articulo
 FROM ctipo_articulo
-WHERE etiqueta_tipo_articulo LIKE 'Montaña Rusa';
+WHERE etiqueta_tipo_articulo LIKE 'Boleto';
 
 SELECT etiqueta_tipo_articulo
 FROM ctipo_articulo
-WHERE id_tipo_articulo = 4;
+WHERE id_tipo_articulo = 02;
 
 
 -- Consultas ctipo_atraccion
