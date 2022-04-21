@@ -26,6 +26,33 @@ SELECT id_cliente
   WHERE id_tipo_boleto = 12;
 
 
+-- crol
+SELECT id_rol
+FROM crol
+WHERE etiqueta_rol LIKE 'Montaña Rusa';
+
+SELECT etiqueta_rol
+FROM crol
+WHERE id_rol = 4;
+
+--csexo
+SELECT id_sexo
+FROM csexo
+WHERE etiqueta_sexo LIKE 'Otro';
+
+SELECT etiqueta_rol
+FROM crol
+WHERE id_rol = 4;
+
+-- ctipo_articulo
+SELECT id_tipo_articulo
+FROM ctipo_articulo
+WHERE etiqueta_tipo_articulo LIKE 'Montaña Rusa';
+
+SELECT etiqueta_tipo_articulo
+FROM ctipo_articulo
+WHERE id_tipo_articulo = 4;
+
 
 -- Consultas ctipo_atraccion
 SELECT id_tipo_atraccion

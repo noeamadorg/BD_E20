@@ -1,6 +1,5 @@
 --articulo
---id_tipo_articulo: 1_ -> boleto, 11 -> básico, 12 -> plata, 13 -> oro; 2_, 3_, 4_, 5_ -> alimento; 6_, 7_, 8_, 9_ -> mercancía.
---id_articulo tiene 6 digitos, id_boleto tiene 5 dígitos.
+  --id_articulo tiene 6 digitos, id_boleto tiene 5 dígitos.
 INSERT INTO articulo (id_articulo, nombre_articulo, precio, id_tipo_articulo, id_boleto) VALUES (302432, 'Boleto Básico', 300.00, 01, 58044);          --I1
 INSERT INTO articulo (id_articulo, nombre_articulo, precio, id_tipo_articulo, id_boleto) VALUES (168522, 'Boleto Oro', 300.00, 01, 33997);          --I2
 INSERT INTO articulo (id_articulo, nombre_articulo, precio, id_tipo_articulo, id_boleto) VALUES (320638, 'Hamburguesa', 90.00, 02, null);            --I3
@@ -59,11 +58,11 @@ INSERT INTO crol (id_rol, etiqueta_rol) VALUES (7, 'Tecnico encargado de juegos 
 
 
 -- csexo
-INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (1, 'Mujer');
-INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (2, 'Hombre');
+INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (1, 'Hombre');
+INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (2, 'Mujer');
 INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (3, 'Otro');
 
--- ctipo_articulo; id_tipo_articulo: 1_ -> boleto, 11 -> básico, 12 -> plata, 13 -> oro; 2_, 3_, 4_, 5_ -> alimento; 6_, 7_, 8_, 9_ -> mercancía.
+-- ctipo_articulo
 INSERT INTO ctipo_articulo (id_tipo_articulo, etiqueta_tipo_articulo) VALUES (01, 'Boleto');
 INSERT INTO ctipo_articulo (id_tipo_articulo, etiqueta_tipo_articulo) VALUES (02, 'Alimento');
 INSERT INTO ctipo_articulo (id_tipo_articulo, etiqueta_tipo_articulo) VALUES (03, 'Mercancía');
@@ -153,6 +152,7 @@ INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_
 INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (16, 2022-02-21, 10:43, 1, 0016, 0016);
 INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (17, 2022-03-23, 19:05, 2, 0017, 0017);
 INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (18, 2022-01-25, 18:12, 3, 0018, 0018);
+
 --persona
 INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (001, 'Abarca', 'Ibarra', 'Angelica', 1991-06-25, 556788906, 2, 00001);
 INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (002, 'Cota', 'Gutierrez', 'Rodolfo', 1987-07-03, 5513871469, 1, 00002);
@@ -225,6 +225,6 @@ VALUES (7962, 360);
 INSERT INTO cliente (id_cliente, id_persona)
 VALUES (3265, 365);
 
---Cmunicipio, por practicidad, acá tomé la CDMX con id-9
+--Cmunicipio, por practicidad, acá tomé la CDMX con id-9 para los cuales los id_municipio (donde tomamos alcaldias analogas a municipios) son los siguientes: 1-ALVARO OBREGO, 2-IZTAPALAPA, 3-AZCAPOTZALCO, 4-LA MAGDALENA CONTRERAS, 5-BENITO JUAREZ, 6-COYOACAN, 7-MILPA ALTA, 8-CUAJIMALPA DE MORELOS, 9-TLAHUAC, 10-CUAUHTEMOC, 11-TLALPAN, 12-GUSTAVO A MADERO 13-VENUSTIANO CARRANZA, 14- MIGUEL HIDALGO, 15-IZTACALCO, 16-XOCHIMILCO
 INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
 VALUES ();
