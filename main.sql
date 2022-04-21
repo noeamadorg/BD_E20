@@ -1,4 +1,4 @@
---- THIS IS A TEMPLATE
+--  THIS IS A TEMPLATE
 .header on
 .mode column
 
