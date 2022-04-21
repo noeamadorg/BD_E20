@@ -56,7 +56,6 @@ INSERT INTO crol (id_rol, etiqueta_rol) VALUES (5, 'Socorrismo');
 INSERT INTO crol (id_rol, etiqueta_rol) VALUES (6, 'Asistencia Sanitaria');
 INSERT INTO crol (id_rol, etiqueta_rol) VALUES (7, 'Tecnico encargado de juegos mecánicos');
 
-
 -- csexo
 INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (1, 'Hombre');
 INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (2, 'Mujer');
