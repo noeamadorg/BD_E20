@@ -18,6 +18,14 @@ DELETE FROM boleto
 
 DELETE FROM boleto 
   WHERE id_boleto = 00012;
+
+--direccion 
+
+--empleado 
+
+--empleado_atraccion
+
+
 -- Eliminaciones orden
 DELETE FROM orden
 WHERE id_orden = 0013;
