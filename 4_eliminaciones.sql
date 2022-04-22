@@ -13,20 +13,20 @@ DELETE FROM atraccion
   WHERE id_atraccion = 2;
 
 --Boleto
-DELETE FROM boleto 
+DELETE FROM boleto
   WHERE id_cliente = 1268;
 
-DELETE FROM boleto 
+DELETE FROM boleto
   WHERE id_boleto = 00012;
 
---direccion 
+--direccion
 DELETE FROM direccion
 WHERE id_direccion = 00004;
 
 DELETE FROM direccion
 WHERE id_direccion = 00010;
 
---empleado 
+--empleado
 DELETE FROM empleado
 WHERE id_empleado = 005;
 

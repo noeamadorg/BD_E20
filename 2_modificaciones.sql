@@ -12,18 +12,18 @@ UPDATE atraccion
 SET id_fabricante = 3
 WHERE id_atraccion = 1;
 
-UPDATE atraccion
-SET id_estado_atraccion = 8
-WHERE id_atraccion = 2;
+--UPDATE atraccion
+--SET id_atraccion = 8
+--WHERE id_atraccion = 2;
 
 -- Boleto
 UPDATE boleto
 SET fecha_validez = '2022-04-21'
 WHERE id_boleto = 00001;
 
-UPDATE boleto
-SET id_cliente = 4361
-WHERE id_boleto = 00002;
+--UPDATE boleto
+--SET id_cliente = 4361
+--WHERE id_boleto = 00002;
 
 --direccion
 UPDATE direccion
@@ -44,9 +44,9 @@ SET id_empleado = 005
 WHERE nss = 0234759339;
 
 --empleado_atraccion
-UPDATE empleado_atraccion
-SET id_empleado_atraccion = 005
-WHERE id_atraccion = 12;
+--UPDATE empleado_atraccion
+--SET id_empleado_atraccion = 005
+--WHERE id_atraccion = 12;
 
 UPDATE empleado_atraccion
 SET id_empleado_atraccion = 011
@@ -80,10 +80,10 @@ SET apellidopat = 'Franco'
 WHERE id_persona = 007;
 
 -- Modificaciones cliente
-UPDATE cliente
-SET id_cliente = 9563
-WHERE id_persona = 004;
+--UPDATE cliente
+--SET id_cliente = 9563
+--WHERE id_persona = 004;
 
-UPDATE cliente
-SET id_cliente = 7962
-WHERE id_persona = 010;
+--UPDATE cliente
+--SET id_cliente = 7962
+--WHERE id_persona = 010;
