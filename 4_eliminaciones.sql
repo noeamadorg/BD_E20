@@ -41,7 +41,7 @@ WHERE apellidomat LIKE 'Vidrio';
 
 -- Eliminaciones cliente
 DELETE FROM cliente
-WHERE id_persona = 365;
+WHERE id_persona = 001;
 
 DELETE FROM cliente
-WHERE id_cliente = 7962;
+WHERE id_persona = 016;

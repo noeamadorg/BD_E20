@@ -50,7 +50,7 @@ WHERE id_atraccion = 12;
 
 UPDATE empleado
 SET id_empleado_atraccion = 011
-WHERE id_empleado = 567;
+WHERE id_empleado = 004;
 
 -- Modificaciones orden
 UPDATE orden
@@ -72,7 +72,7 @@ WHERE id_orden_cliente = 8;
 
 -- Modificaciones persona
 UPDATE persona
-SET telefono = 7228907145
+SET telefono = 569874231
 WHERE id_persona = 004;
 
 UPDATE persona
@@ -81,9 +81,9 @@ WHERE id_persona 007;
 
 -- Modificaciones cliente
 UPDATE cliente
-SET id_persona = 890
-WHERE id_cliente = 1268;
+SET id_cliente = 890
+WHERE id_persona = 004;
 
 UPDATE cliente
 SET id_cliente = 9861
-WHERE id_persona 923;
+WHERE id_persona 010;

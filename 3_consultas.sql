@@ -132,13 +132,13 @@ FROM empleado
 WHERE sueldo = 10000.00;
 
 --empleado-atraccion
-SELECT etiqueta_tipo_de_pago
+SELECT id_empleado_atraccion, fecha_uso
 FROM empleado_atraccion
-WHERE id_tipo_de_pago = 2;
+WHERE fecha_uso = 2022-04-22;
 
-SELECT etiqueta_tipo_de_pago
+SELECT id_empleado_atraccion, id_empleado, id_atraccion, numero_veces_uso
 FROM empleado_atraccion
-WHERE id_tipo_de_pago = 2;
+WHERE numero_veces_uso = 022;
 
 -- Consultas orden
 SELECT id_articulo 
@@ -179,11 +179,11 @@ WHERE etiqueta_fabricante LIKE 'Vekoma';
 -- Colsultas cliente
 SELECT id_cliente
 FROM cliente
-WHERE id_persona = 236;
+WHERE id_persona = 011;
 
 SELECT id_cliente
 FROM cliente
-WHERE id_persona = 462;
+WHERE id_persona = 002;
 
 -- Colsultas cmunicipio
 SELECT id_municipio
