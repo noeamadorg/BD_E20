@@ -1,10 +1,10 @@
---Articulo 
+--Articulo
 SELECT id_articulo
-  FROM articulo 
+  FROM articulo
   WHERE id_boleto = 58044;
 
 SELECT id_articulo
-  FROM articulo 
+  FROM articulo
   WHERE nombre_articulo LIKE 'Orden Tacos';
 
 
@@ -20,17 +20,17 @@ SELECT id_fabricante
 
 --Boleto
 SELECT fecha_validez
-  FROM boleto 
+  FROM boleto
   WHERE id_boleto = 00003;
 
 SELECT id_tipo_boleto
-  FROM boleto 
+  FROM boleto
   WHERE id_cliente = 6983;
 
 
 --Ccolonia
 SELECT id_colonia
-  FROM ccolonia 
+  FROM ccolonia
   WHERE id_colonia = 4;
 
 SELECT etiqueta_colonia
@@ -47,7 +47,7 @@ SELECT etiqueta_estado
   FROM cestado
   WHERE etiqueta_estado LIKE 'Durango'
 
-  
+
 --Cestado_atraccion
 SELECT id_estado_atraccion
   FROM cestado_atraccion
@@ -57,7 +57,7 @@ SELECT etiqueta_estado_atraccion
   FROM cestado_atraccion
   WHERE etiqueta_estado_atraccion LIKE 'no disponible'
 
-  
+
 -- crol
 SELECT id_rol
 FROM crol
@@ -113,16 +113,16 @@ SELECT etiqueta_tipo_de_pago
 FROM ctipo_de_pago
 WHERE id_tipo_de_pago = 2;
 
---direccion 
+--direccion
 SELECT codigo_postal, id_colonia, calle
 FROM direccion
-WHERE  codigo_postal = 07685; 
+WHERE  codigo_postal = 07685;
 
 SELECT codigo_postal, id_colonia, calle
 FROM direccion
-WHERE id_colonia = 15; 
+WHERE id_colonia = 15;
 
---empleado 
+--empleado
 SELECT id_empleado, nss, id_rol
 FROM empleado
 WHERE id_rol = 4;
@@ -134,19 +134,19 @@ WHERE sueldo = 10000.00;
 --empleado-atraccion
 SELECT id_empleado_atraccion, fecha_uso
 FROM empleado_atraccion
-WHERE fecha_uso = 2022-04-22;
+WHERE fecha_uso = '2022-04-22';
 
 SELECT id_empleado_atraccion, id_empleado, id_atraccion, numero_veces_uso
 FROM empleado_atraccion
 WHERE numero_veces_uso = 022;
 
 -- Consultas orden
-SELECT id_articulo 
-FROM orden 
+SELECT id_articulo
+FROM orden
 WHERE id_orden = 0011;
 
 SELECT cantidad
-FROM orden 
+FROM orden
 WHERE id_articulo = 168522;
 
 -- Consultas orden_cliente
@@ -193,19 +193,3 @@ WHERE etiqueta_municipio LIKE 'Xochimilco';
 SELECT id_municipio
 FROM cmunicipio
 WHERE etiqueta_municipio LIKE 'Iztacalco';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
