@@ -1,7 +1,7 @@
 --Articulo
 SELECT id_articulo
   FROM articulo
-  WHERE id_boleto = 58044;
+  WHERE id_boleto = 2;
 
 SELECT id_articulo
   FROM articulo
