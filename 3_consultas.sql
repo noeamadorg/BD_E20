@@ -113,6 +113,11 @@ SELECT etiqueta_tipo_de_pago
 FROM ctipo_de_pago
 WHERE id_tipo_de_pago = 2;
 
+--direccion 
+SELECT etiqueta_tipo_de_pago
+FROM ctipo_de_pago
+WHERE id_tipo_de_pago = 2;
+
 -- Consultas orden
 SELECT id_articulo 
 FROM orden 

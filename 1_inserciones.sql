@@ -298,35 +298,35 @@ VALUES (16, 'Xochimilco',9);
 
 --Direccion 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00003, 'Sur 103', 342, 09090, 29); 
+VALUES(00003, 'Sur 103', 342, 09090, 20); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00001, 'Apaches', 014, 15569, 05); 
+VALUES(00001, 'Apaches', 014, 15569, 19); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00002, 'Siracusa 240', 101, 08567, 34); 
+VALUES(00002, 'Siracusa 240', 101, 08567, 18); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00004, 'Orleans', 879, 07685, 76);  
+VALUES(00004, 'Orleans', 879, 07685, 17);  
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00005, 'Perusa', 003, 12675, 62); 
+VALUES(00005, 'Perusa', 003, 12675, 16); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00006, 'Soledad', 678, 03690, 01); 
+VALUES(00006, 'Soledad', 678, 03690, 15); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00007, 'Miguel Hidalgo', 124, 06439, 45);  
+VALUES(00007, 'Miguel Hidalgo', 124, 06439, 14);  
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00008, 'Independencia', 562, 08798, 73);
+VALUES(00008, 'Independencia', 562, 08798, 13);
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
 VALUES(00009, 'Pacifico', 654, 04589, 11); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00010, 'Canal de chalco', 294, 09705, 16); 
+VALUES(00010, 'Canal de chalco', 294, 09705, 12); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00011, 'Aztecas', 077, 10784, 68); 
+VALUES(00011, 'Aztecas', 077, 10784, 10); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00012, 'Taxqueña', 780, 06783, 18); 
+VALUES(00012, 'Taxqueña', 780, 06783, 09); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00013, 'Coapa', 066, 05783, 41); 
+VALUES(00013, 'Coapa', 066, 05783, 08); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00014, 'Chilpancingo', 436, 04320, 31);  
+VALUES(00014, 'Chilpancingo', 436, 04320, 07);  
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00015, 'Manuela Saenz', 593, 12849, 60); 
+VALUES(00015, 'Manuela Saenz', 593, 12849, 06); 
 
 --Empleado 
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
