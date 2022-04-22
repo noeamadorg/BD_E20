@@ -23,9 +23,9 @@ SELECT fecha_validez
   FROM boleto 
   WHERE id_boleto = 00003;
 
-SELECT id_cliente
+SELECT id_tipo_boleto
   FROM boleto 
-  WHERE id_tipo_boleto = 12;
+  WHERE id_cliente = 6983;
 
 
 --Ccolonia
@@ -120,16 +120,16 @@ WHERE id_orden = 0011;
 
 SELECT cantidad
 FROM orden 
-WHERE id_articulo = 864756;
+WHERE id_articulo = 168522;
 
 -- Consultas orden_cliente
 SELECT fecha_orden
 FROM orden_cliente
-WHERE hora_pago = 09:16;
+WHERE hora_pago = '09:16';
 
 SELECT hora_pago
 FROM orden_cliente
-WHERE fecha_orden = 2022-01-21;
+WHERE fecha_orden = '2022-01-21';
 
 -- Colsultas persona
 SELECT nombre

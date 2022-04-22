@@ -43,9 +43,24 @@ INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atracci
 --boleto
 --id_cliente tiene 4 digitos; id_tipo_boleto: 11 -> básico, 12 -> plata, 13 -> oro
 --PUSE 3 INSERCIONES SOLAMENTE, PORQUE SOLO TENEMOS 3 TIPOS DE BOLETOS
-INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00001, 2022-04-21, 8006, 11);
-INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00002, 2022-04-22, 4261, 12);
-INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00003, 2022-04-23, 3573, 13);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00001, 2022-04-21, 1268, 11);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00002, 2022-04-22, 5698, 12);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00003, 2022-04-23, 1329, 13);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00004, 2022-04-24, 1330, 12);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00005, 2022-04-25, 6983, 13);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00006, 2022-04-26, 1326, 12);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00007, 2022-04-27, 3265, 11);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00008, 2022-04-28, 6329, 11);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00009, 2022-04-29, 6326, 12);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00010, 2022-04-30, 3266, 11);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00011, 2022-05-01, 5703, 12);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00012, 2022-05-02, 1737, 13);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00013, 2022-05-03, 9563, 13);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00014, 2022-05-04, 7962, 13);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00015, 2022-05-05, 3298, 12);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00016, 2022-05-06, 3158, 11);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00017, 2022-05-07, 2689, 12);
+INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00018, 2022-05-08, 3265, 11);
 
 -- crol
 INSERT INTO crol (id_rol, etiqueta_rol) VALUES (1, 'Director');
@@ -178,23 +193,23 @@ INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_
 INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (18, '2022-01-25', '18:12', 3, 3265, 0018);
 
 --persona
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (001, 'Abarca', 'Ibarra', 'Angelica', 1991-06-25, 556788906, 2, 00001);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (002, 'Cota', 'Gutierrez', 'Rodolfo', 1987-07-03, 5513871469, 1, 00002);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (003, 'Aquino', 'Sanchez', 'Pedro', 1995-04-13, 5546722318, 1, 00003);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (004, 'Zendejas', 'Meza', 'Alejandra', 1998-03-20, 5538225898, 2, 00004);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (005, 'Martinez', 'Ortega', 'Fernanda', 2001-11-18, 7228907145, 2, 00005);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (006, 'Herrera', 'Sanchez', 'Miguel', 1999-10-17, 5685142760, 1, 00006);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (007, 'Santos', 'Torres', 'Jaime', 1992-03-13, 5544720567, 1, 00007);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (008, 'Torres', 'Valente', 'Sandra', 1992-05-19, 5538765214, 2, 00008);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (009, 'Tesillo', 'Sanchez', 'Alma', 1983-04-20, 5579334120, 2, 00009);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (010, 'Buron', 'Torres', 'Tania', 1996-09-05, 5632781829, 2, 00010);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (011, 'Viñas', 'Garcia', 'Federico', 1993-07-24, 5537084708, 1, 00011);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (012, 'Sanchez', 'Vidrio', 'Ricardo', 1995-04-29, 5527853411, 1, 00012);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (013, 'Garcia', 'Sanchez', 'Ruben', 1990-01-02, 5546730764, 1, 00013);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (014, 'Rodriguez', 'Lopez', 'Alan', 2006-08-28, 5528945876, 1, 00014);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (015, 'Lopez', 'Rosas', 'Ian', 2002-06-29, 5536759967, 1, 00015);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (016, 'Monterosas', 'Sanchez', 'Anel', 2001-08-30, 7224582930, 2, 00016);
-INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (017, 'Ortiz', 'Rodriguez', 'Yaneli', 1998-07-25, 5515782303, 2, 00017);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (001, 'Abarca', 'Ibarra', 'Angelica', '1991-06-25', 556788906, 2, 00001);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (002, 'Cota', 'Gutierrez', 'Rodolfo', '1987-07-03', 5513871469, 1, 00002);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (003, 'Aquino', 'Sanchez', 'Pedro', '1995-04-13', 5546722318, 1, 00003);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (004, 'Zendejas', 'Meza', 'Alejandra', '1998-03-20', 5538225898, 2, 00004);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (005, 'Martinez', 'Ortega', 'Fernanda', '2001-11-18', 7228907145, 2, 00005);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (006, 'Herrera', 'Sanchez', 'Miguel', '1999-10-17', 5685142760, 1, 00006);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (007, 'Santos', 'Torres', 'Jaime', '1992-03-13', 5544720567, 1, 00007);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (008, 'Torres', 'Valente', 'Sandra', '1992-05-19', 5538765214, 2, 00008);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (009, 'Tesillo', 'Sanchez', 'Alma', '1983-04-20', 5579334120, 2, 00009);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (010, 'Buron', 'Torres', 'Tania', '1996-09-05', 5632781829, 2, 00010);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (011, 'Viñas', 'Garcia', 'Federico', '1993-07-24', 5537084708, 1, 00011);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (012, 'Sanchez', 'Vidrio', 'Ricardo', '1995-04-29', 5527853411, 1, 00012);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (013, 'Garcia', 'Sanchez', 'Ruben', '1990-01-02', 5546730764, 1, 00013);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (014, 'Rodriguez', 'Lopez', 'Alan', '2006-08-28', 5528945876, 1, 00014);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (015, 'Lopez', 'Rosas', 'Ian', '2002-06-29', 5536759967, 1, 00015);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (016, 'Monterosas', 'Sanchez', 'Anel', '2001-08-30', 7224582930, 2, 00016);
+INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (017, 'Ortiz', 'Rodriguez', 'Yaneli', '1998-07-25', 5515782303, 2, 00017);
 
 -- cfabricante, id_fabricante son: 1 -> Maurer Rides, 2 -> Vekoma, 3 -> Zamperla, 4 -> Gerstlauer
 --PUSE 4 InSERCIONES PK SOLO TENEMOS 4 PROVEEDORES
@@ -217,7 +232,7 @@ VALUES (5698, 923);
 INSERT INTO cliente (id_cliente, id_persona)
 VALUES (1329, 326);
 INSERT INTO cliente (id_cliente, id_persona)
-VALUES (1329, 965);
+VALUES (1330, 965);
 INSERT INTO cliente (id_cliente, id_persona)
 VALUES (6983, 326);
 INSERT INTO cliente (id_cliente, id_persona)
@@ -225,17 +240,15 @@ VALUES (1326, 326);
 INSERT INTO cliente (id_cliente, id_persona)
 VALUES (3265, 236);
 INSERT INTO cliente (id_cliente, id_persona)
-VALUES (3265, 462);
-INSERT INTO cliente (id_cliente, id_persona)
 VALUES (6329, 201);
 INSERT INTO cliente (id_cliente, id_persona)
 VALUES (6326, 960);
 INSERT INTO cliente (id_cliente, id_persona)
-VALUES (3265, 095);
+VALUES (3266, 095);
 INSERT INTO cliente (id_cliente, id_persona)
-VALUES (3265, 306);
+VALUES (5703, 306);
 INSERT INTO cliente (id_cliente, id_persona)
-VALUES (3265, 632);
+VALUES (1737, 632);
 INSERT INTO cliente (id_cliente, id_persona)
 VALUES (9563, 962);
 INSERT INTO cliente (id_cliente, id_persona)
@@ -245,7 +258,7 @@ VALUES (3298, 750);
 INSERT INTO cliente (id_cliente, id_persona)
 VALUES (3158, 960);
 INSERT INTO cliente (id_cliente, id_persona)
-VALUES (7962, 360);
+VALUES (2689, 360);
 INSERT INTO cliente (id_cliente, id_persona)
 VALUES (3265, 365);
 
@@ -273,7 +286,7 @@ VALUES (10, 'Cuauhtemoc',9);
 INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
 VALUES (11, 'Tlapan',9); 
 INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
-VALUES (12, 'Gustavo A. MAdero',9); 
+VALUES (12, 'Gustavo A. Madero',9); 
 INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
 VALUES (13, 'Venustiano Carranza',9); 
 INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)

@@ -28,14 +28,29 @@ WHERE id_boleto = 00002;
 --direccion 
 UPDATE direccion
 SET id_direccion = 00003 
-WHERE codigo_postal = 09091; 
+WHERE codigo_postal = 09091;
+
 UPDATE direccion
 SET id_direccion = 00005 
-WHERE calle = 00001;
+WHERE calle = 'Peruza';
+
 --empleado 
+UPDATE empleado
+SET id_empleado = 003
+WHERE id_persona = 500;
+
+UPDATE empleado
+SET id_empleado = 005 
+WHERE nss = 0234759339;
 
 --empleado_atraccion
+UPDATE empleado_atraccion
+SET id_empleado_atraccion = 005 
+WHERE id_atraccion = 12;
 
+UPDATE empleado
+SET id_empleado_atraccion = 011
+WHERE id_empleado = 567;
 
 -- Modificaciones orden
 UPDATE orden
@@ -48,11 +63,11 @@ WHERE id_orden = 0007;
 
 -- Modificaciones orden_cliente
 UPDATE orden_cliente
-SET fecha_orden =  2022-05-02
+SET fecha_orden =  '2022-05-02'
 WHERE id_orden_cliente = 1;
 
 UPDATE orden_cliente
-SET hora_pago = 11:11
+SET hora_pago = '11:11'
 WHERE id_orden_cliente = 8;
 
 -- Modificaciones persona
@@ -61,7 +76,7 @@ SET telefono = 7228907145
 WHERE id_persona = 004;
 
 UPDATE persona
-SET apellidopat = 'Franco'
+SET apellidopat LIKE 'Franco'
 WHERE id_persona 007;
 
 -- Modificaciones cliente

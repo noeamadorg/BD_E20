@@ -14,30 +14,30 @@ DELETE FROM atraccion
 
 --Boleto
 DELETE FROM boleto 
-  WHERE id_tipo_boleto = 11;
+  WHERE id_cliente = 1268;
 
 DELETE FROM boleto 
-  WHERE id_boleto = 00002;
+  WHERE id_boleto = 00012;
 -- Eliminaciones orden
 DELETE FROM orden
 WHERE id_orden = 0013;
 
 DELETE FROM orden
-WHERE id_orden =0018;
+WHERE id_orden = 0018;
 
 -- Eliminaciones orden_cliente
 DELETE FROM orden_cliente
-WHERE fecha_orden = 2022-03-21;
+WHERE fecha_orden = '2022-03-21';
 
 DELETE FROM orden_cliente
-WHERE hora_pago = 10:43;
+WHERE hora_pago = '10:43';
 
 -- Eliminaciones persona
 DELETE FROM persona
-WHERE fecha_nacimiento = 1996-09-05;
+WHERE fecha_nacimiento = '1996-09-05';
 
 DELETE FROM persona
-WHERE apellidomat = 'Vidrio';
+WHERE apellidomat LIKE 'Vidrio';
 
 -- Eliminaciones cliente
 DELETE FROM cliente
