@@ -37,7 +37,7 @@ WHERE calle = 'Peruza';
 --empleado 
 UPDATE empleado
 SET id_empleado = 003
-WHERE id_persona = 500;
+WHERE id_persona = 017;
 
 UPDATE empleado
 SET id_empleado = 005 
@@ -81,9 +81,9 @@ WHERE id_persona 007;
 
 -- Modificaciones cliente
 UPDATE cliente
-SET id_cliente = 890
+SET id_cliente = 9563
 WHERE id_persona = 004;
 
 UPDATE cliente
-SET id_cliente = 9861
-WHERE id_persona 010;
+SET id_cliente = 7962
+WHERE id_persona = 010;

@@ -70,9 +70,9 @@ WHERE id_rol = 4;
 --csexo
 SELECT id_sexo
 FROM csexo
-WHERE etiqueta_sexo LIKE 'Otro';
+WHERE etiqueta_sexo LIKE 'F';
 
-SELECT etiqueta_rol
+SELECT etiqueta_sexo
 FROM csexo
 WHERE id_sexo = 2;
 

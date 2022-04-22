@@ -367,24 +367,24 @@ VALUES(003, 032,2022-04-22 , 002, 5);
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
 VALUES(004, 034,2022-04-22 , 003, 7); 
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
-VALUES(005, 031,2022-04-22 , 00, 11); 
+VALUES(005, 031,2022-04-22 , 005, 11); 
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
-VALUES(006, 033,2022-04-22 , 182, 13); 
+VALUES(006, 033,2022-04-22 , 006, 13); 
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
-VALUES(007, 031,2022-04-21 , 456, 1); 
+VALUES(007, 031,2022-04-21 , 007, 1); 
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
-VALUES(008, 031,2022-04-21 , 067, 11); 
+VALUES(008, 031,2022-04-21 , 008, 11); 
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
-VALUES(009, 032,2022-04-21 , 056, 3); 
+VALUES(009, 032,2022-04-21 , 009, 3); 
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
-VALUES(010, 028,2022-04-20 , 012, 5); 
+VALUES(010, 028,2022-04-20 , 010, 5); 
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
-VALUES(011, 022,2022-04-20, 453, 4); 
+VALUES(011, 022,2022-04-20, 011, 4); 
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
-VALUES(012, 034,2022-04-20 , 332, 15); 
+VALUES(012, 034,2022-04-20 , 013, 15); 
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
-VALUES(013, 033,2022-04-20 , 012, 17); 
+VALUES(013, 033,2022-04-20 , 014, 17); 
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
-VALUES(014, 033,2022-04-20 , 390, 12); 
+VALUES(014, 033,2022-04-20 , 015, 12); 
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
-VALUES(015, 023,2022-04-19 , 895, 2); 
+VALUES(015, 023,2022-04-19 , 016, 2); 
