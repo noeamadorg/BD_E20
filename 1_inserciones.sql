@@ -329,33 +329,33 @@ VALUES(00015, 'Manuela Saenz', 593, 12849, 06);
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
 VALUES(001, 15000.00, 1928406000, 4, 003); 
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(002, 15000.00, 45893022847, 4, 014); 
+VALUES(002, 15000.00, 15893022847, 4, 014); 
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(003, 10000.00, 3748299920, 3, 011); 
+VALUES(003, 10000.00, 1748299920, 3, 011); 
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(004, 11500.00, 3459930231, 2, 002);
+VALUES(004, 11500.00, 1459930231, 2, 002);
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(005, 30000.00, 8776330823,1 , 004);
+VALUES(005, 30000.00, 1776330823,1 , 004);
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(006, 13500.00, 2390560003, 5, 015); 
+VALUES(006, 13500.00, 1390560003, 5, 015); 
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(007, 13500.00, 7585947300, 5, 006); 
+VALUES(007, 13500.00, 1585947300, 5, 006); 
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(008, 13500.00, 6374889233, 5, 012);
+VALUES(008, 13500.00, 1374889233, 5, 012);
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(009, 15000.00, 5446373002, 7, 001); 
+VALUES(009, 15000.00, 1446373002, 7, 001); 
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(010, 15000.00, 3384859360, 7, 010);  
+VALUES(010, 15000.00, 1384859360, 7, 010);  
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(011, 10000.00, 6738462222, 3, 005); 
+VALUES(011, 10000.00, 1738462222, 3, 005); 
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(012, 10000.00, 8907555433, 3, 009); 
+VALUES(012, 10000.00, 1907555433, 3, 009); 
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(013, 11500.00, 6354495837, 2, 013); 
+VALUES(013, 11500.00, 1354495837, 2, 013); 
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
 VALUES(014, 11500.00, 0234759334, 2, 016); 
 INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
-VALUES(015, 11500.00, 8764575543, 2, 007); 
+VALUES(015, 11500.00, 1764575543, 2, 007); 
 
 --Empleado_atraccion
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)

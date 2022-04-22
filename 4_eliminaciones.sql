@@ -20,11 +20,25 @@ DELETE FROM boleto
   WHERE id_boleto = 00012;
 
 --direccion 
+DELETE FROM direccion
+WHERE id_direccion = 00004;
+
+DELETE FROM direccion
+WHERE id_direccion = 00010;
 
 --empleado 
+DELETE FROM empleado
+WHERE id_empleado = 005;
+
+DELETE FROM empleado
+WHERE id_empleado = 011;
 
 --empleado_atraccion
+DELETE FROM empleado_atraccion
+WHERE id_empleado_atraccion = 002;
 
+DELETE FROM empleado_atraccion
+WHERE id_empleado_atraccion = 015;
 
 -- Eliminaciones orden
 DELETE FROM orden
