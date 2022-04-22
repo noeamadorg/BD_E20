@@ -30,8 +30,8 @@ UPDATE direccion
 SET id_direccion = 00003 
 WHERE codigo_postal = 09091; 
 UPDATE direccion
-SET id_direccion =  
-WHERE id_boleto = 00001;
+SET id_direccion = 00005 
+WHERE calle = 00001;
 --empleado 
 
 --empleado_atraccion
