@@ -7,6 +7,7 @@ SELECT id_articulo
   FROM articulo 
   WHERE nombre_articulo LIKE 'Orden Tacos';
 
+
 --Atraccion
 SELECT capacidad
   FROM atraccion
@@ -15,6 +16,7 @@ SELECT capacidad
 SELECT id_fabricante
   FROM atraccion
   WHERE id_atraccion = 8;
+
 
 --Boleto
 SELECT fecha_validez
@@ -26,6 +28,36 @@ SELECT id_cliente
   WHERE id_tipo_boleto = 12;
 
 
+--Ccolonia
+SELECT id_colonia
+  FROM ccolonia 
+  WHERE id_colonia = 4;
+
+SELECT etiqueta_colonia
+  FROM ccolonia
+  WHERE etiqueta_colonia LIKE 'Ajusco Montserrat';
+
+
+--Cestado
+SELECT id_estado
+  FROM cestado
+  WHERE id_estado = 10;
+
+SELECT etiqueta_estado
+  FROM cestado
+  WHERE etiqueta_estado LIKE 'Durango'
+
+  
+--Cestado_atraccion
+SELECT id_estado_atraccion
+  FROM cestado_atraccion
+  WHERE id_estado_atraccion = 1;
+
+SELECT etiqueta_estado_atraccion
+  FROM cestado_atraccion
+  WHERE etiqueta_estado_atraccion LIKE 'no disponible'
+
+  
 -- crol
 SELECT id_rol
 FROM crol
@@ -107,6 +139,34 @@ WHERE nombre LIKE 'Miguel';
 SELECT fecha_nacimiento
 FROM persona
 WHERE id_persona = 013;
+
+-- Colsultas cfabricante
+SELECT id_fabricante
+FROM cfabricante
+WHERE etiqueta_fabricante LIKE 'Maurer Rides';
+
+SELECT id_fabricante
+FROM cfabricante
+WHERE etiqueta_fabricante LIKE 'Vekoma';
+
+-- Colsultas cliente
+SELECT id_cliente
+FROM cliente
+WHERE id_persona = 236;
+
+SELECT id_cliente
+FROM cliente
+WHERE id_persona = 462;
+
+-- Colsultas cmunicipio
+SELECT id_municipio
+FROM cmunicipio
+WHERE etiqueta_municipio LIKE 'Xochimilco';
+
+SELECT id_municipio
+FROM cmunicipio
+WHERE etiqueta_municipio LIKE 'Iztacalco';
+
 
 
 

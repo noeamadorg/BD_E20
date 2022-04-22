@@ -25,6 +25,16 @@ UPDATE boleto
 SET id_cliente = 4361 
 WHERE id_boleto = 00002;
 
+--direccion 
+UPDATE direccion
+SET id_direccion = 00003 
+WHERE codigo_postal = 09091; 
+UPDATE direccion
+SET id_direccion =  
+WHERE id_boleto = 00001;
+--empleado 
+
+--empleado_atraccion
 
 
 -- Modificaciones orden
@@ -53,3 +63,12 @@ WHERE id_persona = 004;
 UPDATE persona
 SET apellidopat = 'Franco'
 WHERE id_persona 007;
+
+-- Modificaciones cliente
+UPDATE cliente
+SET id_persona = 890
+WHERE id_cliente = 1268;
+
+UPDATE cliente
+SET id_cliente = 9861
+WHERE id_persona 923;

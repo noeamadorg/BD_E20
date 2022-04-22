@@ -38,3 +38,10 @@ WHERE fecha_nacimiento = 1996-09-05;
 
 DELETE FROM persona
 WHERE apellidomat = 'Vidrio';
+
+-- Eliminaciones cliente
+DELETE FROM cliente
+WHERE id_persona = 365;
+
+DELETE FROM cliente
+WHERE id_cliente = 7962;

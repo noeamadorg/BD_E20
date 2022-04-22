@@ -21,24 +21,24 @@ INSERT INTO articulo (id_articulo, nombre_articulo, precio, id_tipo_articulo, id
 
 --atraccion
 --id_atraccion son todos los numeros enteros de 1 a 18; capacidad: # de pasajeros por hora; id_fabricante son: 1 -> Maurer Rides, 2 -> Vekoma, 3 -> Zamperla, 4 -> Gerstlauer; id_estado_atraccion son: 10 -> Operación Normal, 8 -> Operación Limitada, 6 -> En revisión, 4 -> Averiada, 2 -> En reparación/mantenimiento, 0 -> Fuera de servicio; id_tipo_atracción son: 1 -> Infantil, 2 -> Familiares, 3 -> Extremos.
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (1, 800, 2, 6, 3);           --I1
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (2, 700, 1, 10, 1);          --I2
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (3, 800, 4, 10, 2);          --I3
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (4, 1000, 2, 10, 3);         --I4
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (5, 1000, 2, 10, 3);         --I5
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (6, 600, 3, 10, 1);          --I6
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (1, 800, 2, 1, 3);           --I1
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (2, 700, 1, 3, 1);          --I2
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (3, 800, 4, 2, 2);          --I3
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (4, 1000, 2, 1, 3);         --I4
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (5, 1000, 2, 1, 3);         --I5
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (6, 600, 3, 4, 1);          --I6
 INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (7, 800, 3, 4, 2);           --I7
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (8, 400, 2, 10, 1);          --I8
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (9, 1200, 1, 10, 3);         --I9
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (10, 1000, 4, 8, 2);         --I10
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (8, 400, 2, 2, 1);          --I8
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (9, 1200, 1, 1, 3);         --I9
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (10, 1000, 4, 4, 2);         --I10
 INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (11, 700, 2, 2, 1);          --I11
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (12, 1000, 1, 8, 3);         --I12
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (13, 500, 4, 6, 1);          --I13
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (14, 900, 3, 0, 2);          --I14
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (15, 800, 2, 8, 3);          --I15
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (12, 1000, 1, 3, 3);         --I12
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (13, 500, 4, 2, 1);          --I13
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (14, 900, 3, 1, 2);          --I14
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (15, 800, 2, 1, 3);          --I15
 INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (16, 700, 3, 4, 2);          --I16
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (17, 600, 1, 10, 1);         --I17
-INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (18, 1200, 2, 10, 3);        --I18
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (17, 600, 1, 1, 1);         --I17
+INSERT INTO atraccion (id_atraccion, capacidad, id_fabricante, id_estado_atraccion, id_tipo_atraccion) VALUES (18, 1200, 2, 1, 3);        --I18
 
 --boleto
 --id_cliente tiene 4 digitos; id_tipo_boleto: 11 -> básico, 12 -> plata, 13 -> oro
@@ -85,72 +85,97 @@ INSERT INTO ctipo_de_pago (id_tipo_de_pago, etiqueta_tipo_de_pago) VALUES (2, 'T
 INSERT INTO ctipo_de_pago (id_tipo_de_pago, etiqueta_tipo_de_pago) VALUES (3, 'Tarjeta de debito');
 
 
---ccolonia
-INSERT INTO ccolonia (id_colonia, id_municipio, etiqueta_colonia) VALUES ();
+--Ccolonia
+-- ccolonia, por practicidad, se toma a Coyoacan con id_6 
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 1, 'Acasulco');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 2, 'Adolfo Ruiz Cortines');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 3, 'Ajusco');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 4, 'Ajusco Montserrat');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 5, 'Alianza Popular Revolucionaria');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 6, 'Almacenes Generales de la S.C.T.');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 7, 'Altillo Universidad');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 8, 'Atlántida');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 9, 'Avante');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 10, 'Barrio del Niño Jesús');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 11, 'Barrio La Concepción');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 12, 'Barrio Oxtopulco Universidad');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 13, 'Barrio San Lucas');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 14, 'Barrio Santa Catarina');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 15, 'Bosques de Tetlameya');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 16, 'Cafetales');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 17, 'Cámara Nacional de la Industria Editorial');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 18, 'Campestre Churubusco');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 19, 'Campestre Coyoacán');
+INSERT INTO ccolonia (id_municipio, id_colonia,  etiqueta_colonia) VALUES (6, 20, 'Cantil del Pedregal');
 
 
---cestado Frutilupis, aqui te pagaré los estados y su id vacas?simon
---
-
-INSERT INTO cestado (id_estado, etiqueta_estado) VALUES ();
-
+--Cestado 
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (1, 'Aguascalientes');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (2, 'Baja California');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (3, 'Baja California Sur');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (4, 'Campeche');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (5, 'Coahuila de Zaragoza');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (6, 'Colima');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (7, 'Chiapas');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (8, 'Chihuahua');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (9, 'Ciudad de México');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (10, 'Durango');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (11, 'Guanajuato');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (12, 'Guerrero');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (13, 'Hidalgo');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (14, 'Jalisco');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (15, 'Estado de México');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (16, 'Michoacán de Ocampo');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (17, 'Morelos');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (18, 'Nayarit');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (19, 'Nuevo León');
+INSERT INTO cestado (id_estado, etiqueta_estado) VALUES (20, 'Oaxaca');
 
 --cestado_atraccion
-INSERT INTO cestado_atraccion(id_tipo_atraccion, etiqueta) VALUES ();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+INSERT INTO cestado_atraccion(id_estado_atraccion, etiqueta_estado_atraccion) VALUES (1, 'en funcionamiento');
+INSERT INTO cestado_atraccion(id_estado_atraccion, etiqueta_estado_atraccion) VALUES (2, 'no disponible');
+INSERT INTO cestado_atraccion(id_estado_atraccion, etiqueta_estado_atraccion) VALUES (3, 'en reparación');
+INSERT INTO cestado_atraccion(id_estado_atraccion, etiqueta_estado_atraccion) VALUES (4, 'en mantenimiento');
 
 
 --orden
 INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0001, 302432, 003);
 INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0002, 168522, 002);
 INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0003, 320638, 002);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0004, 168522, 004);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0005, 320638, 001);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0006, 645011, 003);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0007, 078431, 005);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0008, 078431, 001);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0009, 645011, 003);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0010, 320638, 004);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0011, 320638, 002);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0012, 384091, 001);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0013, 384091, 003);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0014, 864756, 006);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0015, 320638, 002);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0016, 320638, 001);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0017, 864756, 004);
-INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0018, 864756, 005);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0004, 645011, 004);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0005, 542800, 001);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0006, 078431, 003);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0007, 384091, 005);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0008, 276398, 001);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0009, 864756, 003);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0010, 497253, 004);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0011, 668876, 002);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0012, 699743, 001);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0013, 725326, 003);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0014, 929471, 006);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0015, 360190, 002);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0016, 497177, 001);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0017, 869453, 004);
+INSERT INTO orden (id_orden, id_articulo, cantidad) VALUES (0018, 869453, 005);
 --orden_cliente
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (1, 2022-01-14, 14:28, 1, 0001, 0001);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (2, 2022-01-15, 09:16, 3, 0002, 0002);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (3, 2022-01-16, 16:31, 2, 0003, 0003);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (4, 2022-01-17, 15:11, 2, 0004, 0004);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (5, 2022-01-18, 08:39, 3, 0005, 0005);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (6, 2022-01-19, 17:24, 2, 0006, 0006);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (7, 2022-01-20, 16:29, 1, 0007, 0007);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (8, 2022-01-21, 10:33, 1, 0008, 0008);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (9, 2022-01-22, 12:49, 2, 0009, 0009);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (10, 2022-03-29, 18:09, 3, 0010, 0010);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (11, 2022-01-23, 13:59, 2, 0011, 0011);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (12, 2022-02-02, 11:15, 1, 0012, 0012);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (13, 2022-02-05, 14:19, 3, 0013, 0013);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (14, 2022-02-06, 17:22, 3, 0014, 0014);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (15, 2022-02-13, 15:38, 2, 0015, 0015);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (16, 2022-02-21, 10:43, 1, 0016, 0016);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (17, 2022-03-23, 19:05, 2, 0017, 0017);
-INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (18, 2022-01-25, 18:12, 3, 0018, 0018);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (1, 2022-01-14, 14:28, 1, 1268, 0001);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (2, 2022-01-15, 09:16, 3, 5698, 0002);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (3, 2022-01-16, 16:31, 2, 1329, 0003);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (4, 2022-01-17, 15:11, 2, 6983, 0004);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (5, 2022-01-18, 08:39, 3, 6983, 0005);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (6, 2022-01-19, 17:24, 2, 1326, 0006);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (7, 2022-01-20, 16:29, 1, 3265, 0007);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (8, 2022-01-21, 10:33, 1, 3265, 0008);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (9, 2022-01-22, 12:49, 2, 3265, 0009);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (10, 2022-03-29, 18:09, 3, 9563, 0010);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (11, 2022-01-23, 13:59, 2, 9563, 0011);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (12, 2022-02-02, 11:15, 1, 7962, 0012);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (13, 2022-02-05, 14:19, 3, 7962, 0013);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (14, 2022-02-06, 17:22, 3, 3298, 0014);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (15, 2022-02-13, 15:38, 2, 3158, 0015);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (16, 2022-02-21, 10:43, 1, 7962, 0016);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (17, 2022-03-23, 19:05, 2, 7962, 0017);
+INSERT INTO orden_cliente (id_orden_cliente, fecha_orden, hora_pago, id_tipo_de_pago, id_cliente, id_orden) VALUES (18, 2022-01-25, 18:12, 3, 3265, 0018);
 
 --persona
 INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (001, 'Abarca', 'Ibarra', 'Angelica', 1991-06-25, 556788906, 2, 00001);
@@ -172,7 +197,7 @@ INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimie
 INSERT INTO persona (id_persona, apellidopat, apellidomat, nombre, fecha_nacimiento, telefono, id_sexo, id_direccion) VALUES (017, 'Ortiz', 'Rodriguez', 'Yaneli', 1998-07-25, 5515782303, 2, 00017);
 
 -- cfabricante, id_fabricante son: 1 -> Maurer Rides, 2 -> Vekoma, 3 -> Zamperla, 4 -> Gerstlauer
---PUSE 4 ISERCIONES PK SOLO TENEMOS 4 PROVEEDORES
+--PUSE 4 InSERCIONES PK SOLO TENEMOS 4 PROVEEDORES
 
 INSERT INTO cfabricante (id_fabricante, etiqueta_fabricante)
 VALUES (1, 'Maurer Rides');
@@ -224,6 +249,132 @@ VALUES (7962, 360);
 INSERT INTO cliente (id_cliente, id_persona)
 VALUES (3265, 365);
 
---Cmunicipio, por practicidad, acá tomé la CDMX con id-9 para los cuales los id_municipio (donde tomamos alcaldias analogas a municipios) son los siguientes: 1-ALVARO OBREGO, 2-IZTAPALAPA, 3-AZCAPOTZALCO, 4-LA MAGDALENA CONTRERAS, 5-BENITO JUAREZ, 6-COYOACAN, 7-MILPA ALTA, 8-CUAJIMALPA DE MORELOS, 9-TLAHUAC, 10-CUAUHTEMOC, 11-TLALPAN, 12-GUSTAVO A MADERO 13-VENUSTIANO CARRANZA, 14- MIGUEL HIDALGO, 15-IZTACALCO, 16-XOCHIMILCO
+--Cmunicipio, por practicidad, se tomó la CDMX con id_estado-9 donde se consideró alcaldia analogo a municipio
 INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
-VALUES ();
+VALUES (1, 'Alvaro Obregon',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (2, 'Iztapalapa',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (3, 'Azcapotzalco',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (4, 'Magdalena Contreras',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (5, 'Benito Juarez',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (6, 'Coyoacán',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (7, 'Milpa Alta',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (8, 'Cuajimalpa',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (9, 'Tlahuac',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (10, 'Cuauhtemoc',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (11, 'Tlapan',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (12, 'Gustavo A. MAdero',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (13, 'Venustiano Carranza',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (14, 'Miguel Hidalgo', 9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (15, 'Iztacalco',9); 
+INSERT INTO cmunicipio (id_municipio, etiqueta_municipio,id_estado)
+VALUES (16, 'Xochimilco',9); 
+
+--Direccion 
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00003, 'Sur 103', 342, 09090, 29); 
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00001, 'Apaches', 014, 15569, 05); 
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00002, 'Siracusa 240', 101, 08567, 34); 
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00004, 'Orleans', 879, 07685, 76);  
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00005, 'Perusa', 003, 12675, 62); 
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00006, 'Soledad', 678, 03690, 01); 
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00007, 'Miguel Hidalgo', 124, 06439, 45);  
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00008, 'Independencia', 562, 08798, 73);
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00009, 'Pacifico', 654, 04589, 11); 
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00010, 'Canal de chalco', 294, 09705, 16); 
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00011, 'Aztecas', 077, 10784, 68); 
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00012, 'Taxqueña', 780, 06783, 18); 
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00013, 'Coapa', 066, 05783, 41); 
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00014, 'Chilpancingo', 436, 04320, 31);  
+INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
+VALUES(00015, 'Manuela Saenz', 593, 12849, 60); 
+
+--Empleado 
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(001, 15000.00, 1928406000, 4, 001); 
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(002, 15000.00, 45893022847, 4, 012); 
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(003, 10000.00, 3748299920, 3, 459); 
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(004, 11500.00, 3459930231, 2, 194);
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(005, 30000.00, 8776330823,1 , 534);
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(006, 13500.00, 2390560003, 5, 934); 
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(007, 13500.00, 7585947300, 5, 341); 
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(008, 13500.00, 6374889233, 5, 575);
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(009, 15000.00, 5446373002, 7, 006); 
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(010, 15000.00, 3384859360, 7, 047);  
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(011, 10000.00, 6738462222, 3, 267); 
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(012, 10000.00, 8907555433, 3, 112); 
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(013, 11500.00, 6354495837, 2, 336); 
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(014, 11500.00, 0234759334, 2, 548); 
+INSERT INTO empleado (id_empleado, sueldo, nss, id_rol,id_persona)
+VALUES(015, 11500.00, 8764575543, 2, 167); 
+
+--Empleado_atraccion
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(001, 034,2022-04-22 , 012, 1); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(002, 033,2022-04-22 , 034, 2);
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(003, 032,2022-04-22 , 067, 5); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(004, 034,2022-04-22 , 021, 7); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(005, 031,2022-04-22 , 056, 11); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(006, 033,2022-04-22 , 182, 13); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(007, 031,2022-04-21 , 456, 1); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(008, 031,2022-04-21 , 067, 11); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(009, 032,2022-04-21 , 056, 3); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(010, 028,2022-04-20 , 012, 5); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(011, 022,2022-04-20, 453, 4); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(012, 034,2022-04-20 , 332, 15); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(013, 033,2022-04-20 , 012, 17); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(014, 033,2022-04-20 , 390, 12); 
+INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
+VALUES(015, 023,2022-04-19 , 895, 2); 
