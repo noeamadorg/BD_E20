@@ -114,8 +114,30 @@ FROM ctipo_de_pago
 WHERE id_tipo_de_pago = 2;
 
 --direccion 
+SELECT codigo_postal, id_colonia, calle
+FROM direccion
+WHERE  codigo_postal = 07685; 
+
+SELECT codigo_postal, id_colonia, calle
+FROM direccion
+WHERE id_colonia = 15; 
+
+--empleado 
+SELECT id_empleado, nss, id_rol
+FROM empleado
+WHERE id_rol = 4;
+
+SELECT id_empleado,nss, id_rol, sueldo
+FROM empleado
+WHERE sueldo = 10000.00;
+
+--empleado-atraccion
 SELECT etiqueta_tipo_de_pago
-FROM ctipo_de_pago
+FROM empleado_atraccion
+WHERE id_tipo_de_pago = 2;
+
+SELECT etiqueta_tipo_de_pago
+FROM empleado_atraccion
 WHERE id_tipo_de_pago = 2;
 
 -- Consultas orden

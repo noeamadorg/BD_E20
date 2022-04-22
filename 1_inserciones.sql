@@ -72,9 +72,8 @@ INSERT INTO crol (id_rol, etiqueta_rol) VALUES (6, 'Asistencia Sanitaria');
 INSERT INTO crol (id_rol, etiqueta_rol) VALUES (7, 'Tecnico encargado de juegos mecánicos');
 
 -- csexo
-INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (1, 'Hombre');
-INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (2, 'Mujer');
-INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (3, 'Otro');
+INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (1, 'M');
+INSERT INTO csexo (id_sexo, etiqueta_sexo) VALUES (2, 'F');
 
 -- ctipo_articulo
 INSERT INTO ctipo_articulo (id_tipo_articulo, etiqueta_tipo_articulo) VALUES (01, 'Boleto');
@@ -306,7 +305,7 @@ VALUES(00002, 'Siracusa 240', 101, 08567, 18);
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
 VALUES(00004, 'Orleans', 879, 07685, 17);  
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
-VALUES(00005, 'Perusa', 003, 12675, 16); 
+VALUES(00005, 'Perusa', 003, 07685, 16); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
 VALUES(00006, 'Soledad', 678, 03690, 15); 
 INSERT INTO direccion (id_direccion, calle, num_exterior, codigo_postal, id_colonia) 
