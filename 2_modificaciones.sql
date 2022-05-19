@@ -12,54 +12,55 @@ UPDATE atraccion
 SET id_fabricante = 3
 WHERE id_atraccion = 1;
 
---UPDATE atraccion
---SET id_atraccion = 8
---WHERE id_atraccion = 2;
+UPDATE atraccion
+SET id_estado_atraccion = 2
+WHERE id_atraccion = 2;
 
 -- Boleto
 UPDATE boleto
 SET fecha_validez = '2022-04-21'
-WHERE id_boleto = 00001;
+WHERE id_boleto = 1;
 
---UPDATE boleto
---SET id_cliente = 4361
---WHERE id_boleto = 00002;
+-- LAS LLAVES PRIMARIAS Y FORANEAS NO SE PUEDEN EDITAR, creo jaja Okay :) Está bien, procuraré no hacerlo 
+UPDATE boleto
+SET fecha_validez = '2022-04-16'
+WHERE id_boleto = 2;
 
 --direccion
 UPDATE direccion
-SET id_direccion = 00003
-WHERE codigo_postal = 09091;
+SET codigo_postal = 09091
+WHERE id_direccion = 3;
 
 UPDATE direccion
-SET id_direccion = 00005
-WHERE calle = 'Peruza';
+SET calle = 'Peruza' --Aqui es = o LIKE?
+WHERE id_direccion = 5;
 
 --empleado
 UPDATE empleado
-SET id_empleado = 003
-WHERE id_persona = 017;
+SET sueldo = 11000
+WHERE id_persona = 12;
 
 UPDATE empleado
-SET id_empleado = 005
-WHERE nss = 0234759339;
+SET nss = 0234759339
+WHERE id_empleado = 5;
 
 --empleado_atraccion
---UPDATE empleado_atraccion
---SET id_empleado_atraccion = 005
---WHERE id_atraccion = 12;
+UPDATE empleado_atraccion
+SET numero_veces_uso = 25
+WHERE id_atraccion = 12;
 
 UPDATE empleado_atraccion
-SET id_empleado_atraccion = 011
-WHERE id_empleado = 004;
+SET fecha_uso = '2022-04-16'
+WHERE id_empleado = 4;
 
 -- Modificaciones orden
 UPDATE orden
-SET id_articulo = 645011
-WHERE id_orden = 0012;
+SET cantidad = 11
+WHERE id_orden = 12;
 
 UPDATE orden
-SET cantidad = 011
-WHERE id_orden = 0007;
+SET cantidad = 1
+WHERE id_articulo = 302432;
 
 -- Modificaciones orden_cliente
 UPDATE orden_cliente
@@ -73,15 +74,16 @@ WHERE id_orden_cliente = 8;
 -- Modificaciones persona
 UPDATE persona
 SET telefono = 569874231
-WHERE id_persona = 004;
+WHERE id_persona = 4;
 
 UPDATE persona
 SET apellidopat = 'Franco'
-WHERE id_persona = 007;
+WHERE id_persona = 7;
 
--- Modificaciones cliente
+-- Modificaciones cliente      En esta tabla solo hay 2                                     columnas y ambas son llaves...
+                            -- Así la dejamos, sin                                          modificación?                               
 --UPDATE cliente
---SET id_cliente = 9563
+--SET 
 --WHERE id_persona = 004;
 
 --UPDATE cliente

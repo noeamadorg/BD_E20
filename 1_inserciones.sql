@@ -303,7 +303,7 @@ VALUES(013, 033,'2022-04-22', 014, 17);
 INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
 VALUES(014, 033,'2022-04-22', 015, 12);
 -- INSERT INTO empleado_atraccion (id_empleado_atraccion, numero_veces_uso, fecha_uso, id_empleado,id_atraccion)
---VALUES(015, 023,'2022-04-22', 016, 2);
+--VALUES(015, 023,'2022-04-22', 004, 16);
 
 --boleto
 INSERT INTO boleto (id_boleto, fecha_validez, id_cliente, id_tipo_boleto) VALUES (00001, '2022-04-21', 1268, 11);
